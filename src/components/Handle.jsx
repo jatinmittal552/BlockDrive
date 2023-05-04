@@ -1,6 +1,7 @@
 import GetStartedBtn from "./GetStartedBtn";
 // import star from "../assets/Star.svg";
 import shield from "../assets/Shield.svg";
+import community from "../assets/community.png";
 import send from "../assets/Send.svg";
 import styles, { layout } from "../style";
 
@@ -19,7 +20,18 @@ const HandleMoney = () => {
         <p className="text-dimWhite text-lg py-4">
           You can trust that your data is safe and share it confidently without worrying about third-party interference.
         </p>
-        <GetStartedBtn />
+       
+        <div className="flex gap-3 hover:bg-sha py-2 pl-2 rounded-md">
+          {/* <img src={community} alt="Shield" style={{width:'color:"white"}} /> */}
+          <header>
+            <h1 className="text-white pb-1 text-lg lg:text-2xl">
+              Community-driven
+            </h1>
+            <p className="text-dimWhite text-base">
+              Decentralized storage space ensures privacy as data is encrypted and stored in a way that only the owner can access it.
+            </p>
+          </header>
+        </div>
       </div>
 
       <div
@@ -51,6 +63,7 @@ const HandleMoney = () => {
             </p>
           </header>
         </div>
+       
 
         <figure className="flex gap-3 hover:bg-sha py-2 pl-2 rounded-md">
           <img src={send} alt="Send" />

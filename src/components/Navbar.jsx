@@ -5,7 +5,7 @@ import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
 import GetStartedBtn from "./GetStartedBtn";
 import comments from "./Comments";
-
+import { Link as Linki } from "react-router-dom";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -37,9 +37,9 @@ const Navbar = () => {
         <Link to="/" className="anchor-tag" spy={true} smooth={true} offset={50} duration={500} >
          Features
         </Link>
-        <Link to="/" className="anchor-tag" spy={true} smooth={true} offset={50} duration={500} >
-         Solution
-        </Link>
+        <Linki to="/docs" className="anchor-tag" spy={true} smooth={true} offset={50} duration={500} >
+         Docs
+        </Linki>
       
         <a className="anchor-tag" href="#">
          <GetStartedBtn />

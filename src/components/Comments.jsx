@@ -10,6 +10,7 @@ const Comments = () => {
   data-aos="fade-up"
   data-aos-delay="400"
   className="py-2 px-4 hover:bg-sha rounded-md sm:w-72 md:w-56 lg:w-[19rem]"
+  // data-aos-anchor-placement="top-bottom"
 >
   <figure className="flex gap-2 items-center pb-3">
     <img
