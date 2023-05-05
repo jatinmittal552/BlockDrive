@@ -17,19 +17,19 @@ const Home = () => {
   return (
     <main className="bg-primary h-full px-6 md:px-[4rem] font-poppins overflow-x-hidden">
     <Navbar />
-    <Header />
+    {/* <Header />
     <Stats />
     <Handle />
     <ControlBilling />
     <BetterCard />
-    <Review />
+    <Review /> */}
     {/* <Comments />  */}
     {/* <Partners /> */}
-    <TryService />
+    {/* <TryService />
     <SimpleAccordion />
     <Footer />
     
-    <FooterLink />
+    <FooterLink /> */}
     </main>
   )
 }

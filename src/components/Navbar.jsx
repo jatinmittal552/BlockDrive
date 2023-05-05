@@ -6,6 +6,7 @@ import close from "../assets/close.svg";
 import GetStartedBtn from "./GetStartedBtn";
 import comments from "./Comments";
 import { Link as Linki } from "react-router-dom";
+import { connectWallet } from "../utils/wallet";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -13,6 +14,8 @@ const Navbar = () => {
   const showNavbar = () => {
     navRef.current.classList.toggle("translate-x-[100%]");
   };
+
+ 
 
   return (
     <nav className="flex items-center justify-between py-5 overflow-hidden">
@@ -41,20 +44,21 @@ const Navbar = () => {
          Docs
         </Linki>
       
-        <a className="anchor-tag" href="#">
-         <GetStartedBtn />
-        </a>
+      
+         <GetStartedBtn/>
+        
         <button
           onClick={showNavbar}
           className="opacity-1 sm:opacity-0 sm:hidden pointer absolute top-[1.5rem] right-[2rem]"
         >
           <img src={close} alt="close" />
         </button>
-      </section>
 
       <button onClick={showNavbar} className="opacity-1 sm:opacity-0 sm:hidden">
         <img src={menu} alt="menu" />
       </button>
+            </section>
+
     </nav>
   );
 };
